@@ -11,7 +11,6 @@
 }
 /* menu */
 #menu{
-    
     list-style: none;
     padding: 0;
     text-align: center;
@@ -20,7 +19,8 @@
 }
 #menu ul{
     background-color:rgb(53, 53, 53);
-    width: 1080px;   
+    min-width: 200px;
+    max-width: 1080px;   
 }
 #menu ul li{
     display: inline;
@@ -67,9 +67,11 @@ body{
     font-size: 120%;
     background-color: rgb(221, 221, 221);
 }
+
 #container{
-    width: 1080px;
-    height: 1000px;
+    min-width: 200px;
+    max-width: 1080px;
+    max-height: 1800px;
     background-color:rgb(255, 255, 255);
     margin: 0 auto 0 auto;
     padding: 0;
@@ -86,6 +88,7 @@ body{
     text-align: center;
 }
 p{
+    text-align: justify;
     padding: 20px;
 }
 #pontos{
