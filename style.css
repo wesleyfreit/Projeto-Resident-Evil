@@ -1,6 +1,6 @@
 :root{
     --cor-fundo:rgb(0, 0, 0);
-    --cor-sombra : rgb(161, 161, 161);
+    --cor-sombra : rgb(0, 0, 0);
     --cor-primaria:  rgb(255, 255, 255);
 }
 *{
@@ -18,32 +18,35 @@
     box-shadow: 0 0 1em var(--cor-sombra);
 }
 #menu ul{
-    background-color:rgb(53, 53, 53);
+    background-color:rgb(78, 78, 78);
     min-width: 200px;
-    max-width: 1080px;   
+    max-width: 1080px;
 }
 #menu ul li{
-    display: inline;
     position: relative;
+    display: inline;
 }
 #menu ul li a{
     color: var(--cor-primaria);
     padding: 10px;
-    display: inline-block; 
+    display: inline-block;
     text-decoration: none;
+    border-bottom-width: 3px;
+    border-bottom: outset;
+    border-bottom-color: rgb(150, 150, 180);
+    
     transition: background .2s;
 
 }
 #menu ul li a:hover{
-    background-color:var(--cor-fundo);
-    font-size: 110%;
-    border-width: 1px;
-    border-style: outset;
+    border-bottom: outset;
+    border-bottom-width: 3px;
     border-color: var(--cor-fundo);
+    font-size: 90%;
 }
 /* sub-menu */
 #menu ul ul{
-    background-color:rgb(53, 53, 53);
+    background-color:rgb(78, 78, 78);
     width: 1080px;
     box-sizing: border-box;
     display: none;
@@ -59,13 +62,13 @@
     display: block;
 }
 #menu ul ul li a:hover{
-    border-width: 1px;
-    border-style: outset;
-    border-color: var(--cor-fundo);
+    border-color: rgb(0, 0, 0);
+    background-color: var(--cor-fundo);
+    font-size: 90%;
 }
 body{
     font-size: 120%;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(226, 226, 226);
 }
 
 #container{
@@ -76,24 +79,28 @@ body{
     margin: 0 auto 0 auto;
     padding: 0;
     box-shadow: 0 5px 5px var(--cor-sombra);
+    
 }
 #titulo{
+    background-color:rgb(146, 1, 1);
     padding: 20px;
-    color: rgb(53, 53, 53);
+    color: rgb(238, 238, 238);
     text-align: center;
     font-weight: 800;
-    text-shadow: 1px 2px 1px rgb(175, 175, 175);
+    text-shadow: 1px 2px 1px rgb(32, 32, 32);
 }
 #sub{
     text-align: center;
+    font-weight:550;
 }
 p{
     text-align: justify;
     padding: 20px;
 }
 #pontos{
-    list-style: none;
     margin-left: 60px;
+    list-style:square;
+    font-size: 80%;
 }
 /* fim de página */
 #end-page{
